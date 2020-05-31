@@ -18,7 +18,7 @@
             <h2><span th:text="${sectionName}"></span></h2>
             <hr>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:if="${section=='questions'} ">
-                <div class="media" th:each=" question: ${pagination.questions}" style="margin-bottom: 20px;">
+                <div class="media" th:each=" question: ${pagination.data}" style="margin-bottom: 20px;">
                     <div class="media-left">
                         <a href="#">
                             <img class="media-object img-round" style="width: 45px;height: 45px"
@@ -43,8 +43,8 @@
                 </div>
 
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:if="${section=='replies'} "></div>
-            <div class="media" th:each=" notification   : ${pagination.questions}" style="margin-bottom: 20px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:if="${section=='replies'} ">
+            <div class="media" th:each="notification : ${pagination.data}" style="margin-bottom: 20px;">
 
                 <div class="media-body">
                     <p class="media-heading" >
@@ -57,7 +57,7 @@
 
                 </div>
             </div>
-
+        </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <nav aria-label="Page navigation">
                 <ul class="pagination">

@@ -67,7 +67,7 @@ public class NotificationService {
         }
 
 
-        paginationDTO.setQuestions(notificationDTOS);
+        paginationDTO.setData(notificationDTOS);
         return paginationDTO;
     }
 

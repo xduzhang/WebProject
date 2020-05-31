@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PaginationDTO<T> {
-    private List<T> questions;
+    private List<T> data;
     private boolean showPrevious;
     private boolean showFirstPage;
     private boolean showNext;
@@ -21,12 +21,12 @@ public class PaginationDTO<T> {
         this.totalPage = totalPage;
     }
 
-    public List<T> getQuestions() {
-        return questions;
+    public List<T> getData() {
+        return data;
     }
 
-    public void setQuestions(List<T> questions) {
-        this.questions = questions;
+    public void setData(List<T> data) {
+        this.data = data;
     }
 
     public boolean isShowPrevious() {
